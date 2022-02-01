@@ -1,0 +1,4 @@
+Os resultados estão na pasta RESULT para conferência.
+Também é possível executar localmente, basta instalar o Robot Framework 4.1.3 + (Python 3.10.2 on win32)
+Para executar depois de instalar o Robot, em alguma IDE ou editor de texto (eu utilizo o VSCode ou Atom), basta selecionar a pasta do Projeto (RankingRobos)
+e no terminal (também dentro dessa pasta) executar a linha de comando: robot -d ./results tests\TestRankingRobos.robot.
