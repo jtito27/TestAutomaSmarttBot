@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220201 00:51:53.850" rpa="false" schemaversion="2">
+<suite id="s1" name="TestRankingRobos" source="C:\Users\João Victor\Desktop\Projeto SmarttBot\RankingRobos\tests\TestRankingRobos.robot">
+<test id="s1-t1" name="Cenário 01: Validar Login">
+<kw name="Abrir navegador" library="Resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220201 00:51:54.092" level="INFO">Opening browser 'chrome' to base url 'https://app.smarttbot.com/public/login'.</msg>
+<status status="PASS" starttime="20220201 00:51:54.092" endtime="20220201 00:51:59.853"/>
+</kw>
+<status status="PASS" starttime="20220201 00:51:54.092" endtime="20220201 00:51:59.853"/>
+</kw>
+<kw name="Dado que estou na página inicial do site" library="Resource">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>SmarttBot 2.0 - Nossa tecnologia, suas ordens</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220201 00:51:59.858" level="INFO">Page title is 'SmarttBot 2.0 - Nossa tecnologia, suas ordens'.</msg>
+<status status="PASS" starttime="20220201 00:51:59.854" endtime="20220201 00:51:59.858"/>
+</kw>
+<status status="PASS" starttime="20220201 00:51:59.853" endtime="20220201 00:51:59.858"/>
+</kw>
+<kw name="Quando eu preencher o formulario de login com um login existente" library="Resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${LOGIN}</arg>
+<arg>j.tito27@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220201 00:51:59.859" level="INFO">Typing text 'j.tito27@gmail.com' into text field 'id=login-username'.</msg>
+<status status="PASS" starttime="20220201 00:51:59.859" endtime="20220201 00:51:59.985"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PASSWORD}</arg>
+<arg>Maurialleli8</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220201 00:51:59.986" level="INFO">Typing text 'Maurialleli8' into text field 'id=login-password'.</msg>
+<status status="PASS" starttime="20220201 00:51:59.985" endtime="20220201 00:52:00.091"/>
+</kw>
+<status status="PASS" starttime="20220201 00:51:59.859" endtime="20220201 00:52:00.091"/>
+</kw>
+<kw name="E clicar no botão acessar" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN_LOGIN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220201 00:52:00.092" level="INFO">Clicking element 'id=login-button'.</msg>
+<status status="PASS" starttime="20220201 00:52:00.091" endtime="20220201 00:52:00.150"/>
+</kw>
+<status status="PASS" starttime="20220201 00:52:00.091" endtime="20220201 00:52:00.150"/>
+</kw>
+<kw name="Então o sistema deve exibir a tela home" library="Resource">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${BTN_CRIAR}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220201 00:52:00.151" endtime="20220201 00:52:02.905"/>
+</kw>
+<status status="PASS" starttime="20220201 00:52:00.151" endtime="20220201 00:52:02.905"/>
+</kw>
+<kw name="E Validar se o menu Ranking está sendo exibido" library="Resource">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${BTN_RANKING}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220201 00:52:02.906" endtime="20220201 00:52:02.931"/>
+</kw>
+<status status="PASS" starttime="20220201 00:52:02.906" endtime="20220201 00:52:02.931"/>
+</kw>
+<kw name="Fechar navegador" library="Resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220201 00:52:02.934" endtime="20220201 00:52:05.104"/>
+</kw>
+<status status="PASS" starttime="20220201 00:52:02.934" endtime="20220201 00:52:05.105"/>
+</kw>
+<status status="PASS" starttime="20220201 00:51:54.091" endtime="20220201 00:52:05.106"/>
+</test>
+<test id="s1-t2" name="Cenário 02: Validar exibição do robô ​Heitor Villa-Lobos">
+<kw name="Abrir navegador" library="Resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220201 00:52:05.112" level="INFO">Opening browser 'chrome' to base url 'https://app.smarttbot.com/public/login'.</msg>
+<status status="PASS" starttime="20220201 00:52:05.111" endtime="20220201 00:52:30.335"/>
+</kw>
+<status status="PASS" starttime="20220201 00:52:05.110" endtime="20220201 00:52:30.335"/>
+</kw>
+<kw name="Dado que estou logado página inicial do site" library="Resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${LOGIN}</arg>
+<arg>j.tito27@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220201 00:52:30.336" level="INFO">Typing text 'j.tito27@gmail.com' into text field 'id=login-username'.</msg>
+<status status="PASS" starttime="20220201 00:52:30.335" endtime="20220201 00:52:30.573"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PASSWORD}</arg>
+<arg>Maurialleli8</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220201 00:52:30.573" level="INFO">Typing text 'Maurialleli8' into text field 'id=login-password'.</msg>
+<status status="PASS" starttime="20220201 00:52:30.573" endtime="20220201 00:52:30.679"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN_LOGIN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220201 00:52:30.679" level="INFO">Clicking element 'id=login-button'.</msg>
+<status status="PASS" starttime="20220201 00:52:30.679" endtime="20220201 00:52:30.733"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${BTN_CRIAR}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220201 00:52:30.734" endtime="20220201 00:52:33.656"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Análise geral</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220201 00:52:33.669" level="INFO">Current page contains text 'Análise geral'.</msg>
+<status status="PASS" starttime="20220201 00:52:33.656" endtime="20220201 00:52:33.669"/>
+</kw>
+<status status="PASS" starttime="20220201 00:52:30.335" endtime="20220201 00:52:33.669"/>
+</kw>
+<kw name="Quando eu clicar no menu Ranking" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN_RANKING}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220201 00:52:33.670" level="INFO">Clicking element 'id=sidebar-menu-item-scoreboard'.</msg>
+<status status="PASS" starttime="20220201 00:52:33.670" endtime="20220201 00:52:34.073"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220201 00:52:39.076" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220201 00:52:34.073" endtime="20220201 00:52:39.076"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>691 robôs encontrados</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220201 00:52:39.076" endtime="20220201 00:52:43.694"/>
+</kw>
+<status status="PASS" starttime="20220201 00:52:33.669" endtime="20220201 00:52:43.694"/>
+</kw>
+<kw name="Então o sistema deve listar os robos existentes" library="Resource">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>691 robôs encontrados</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220201 00:52:43.709" level="INFO">Current page contains text '691 robôs encontrados'.</msg>
+<status status="PASS" starttime="20220201 00:52:43.695" endtime="20220201 00:52:43.709"/>
+</kw>
+<status status="PASS" starttime="20220201 00:52:43.695" endtime="20220201 00:52:43.709"/>
+</kw>
+<kw name="E validar a existencia do robo" library="Resource">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Heitor Villa-Lobos</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220201 00:52:43.724" level="INFO">Current page contains text 'Heitor Villa-Lobos'.</msg>
+<status status="PASS" starttime="20220201 00:52:43.709" endtime="20220201 00:52:43.724"/>
+</kw>
+<status status="PASS" starttime="20220201 00:52:43.709" endtime="20220201 00:52:43.724"/>
+</kw>
+<kw name="Fechar navegador" library="Resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220201 00:52:43.725" endtime="20220201 00:52:45.931"/>
+</kw>
+<status status="PASS" starttime="20220201 00:52:43.724" endtime="20220201 00:52:45.931"/>
+</kw>
+<status status="PASS" starttime="20220201 00:52:05.109" endtime="20220201 00:52:45.932"/>
+</test>
+<status status="PASS" starttime="20220201 00:51:53.852" endtime="20220201 00:52:45.933"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="TestRankingRobos">TestRankingRobos</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
